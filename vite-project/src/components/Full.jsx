@@ -60,7 +60,9 @@ function Full() {
           boxShadow="dark-lg"
           color={"white"}
         >
-          <Text fontSize={"3xl"} padding={"30px"}>{who} won the game</Text>
+          <Text fontSize={"3xl"} padding={"30px"}>
+            {who} won the game
+          </Text>
           <Button
             color={"teal"}
             display="block"
@@ -73,7 +75,10 @@ function Full() {
         </Box>
       ) : (
         <>
-          <Text fontSize={"3xl"} color={"teal"}>{turn ? "x" : "0"} move</Text>
+          <Text fontSize={"3xl"} color={"teal"}>
+            {turn ? "x" : "0"} move
+          </Text>
+          <Button onClick={() => setIcon(Array(9).fill(null))}>RESET</Button>
           <Box
             w={"100vh"}
             h={"80vh"}
